@@ -1,0 +1,42 @@
+[tool.ruff]
+
+select = ["F", "W", "E", "W", "C90", "I", "N", "D", "UP", "YTT", "ANN", "ASYNC", "S", "BLE", "FBT", "B", "A", "COM", "C4", "DTZ", "T10", "DJ", "EM", "EXE", "FA", "ISC", "ICN", "G", "INP", "PIE", "T20", "PYI", "PT", "Q", "RSE", "RET", "SLF", "SLOT", "SIM", "TID", "TCH", "INT", "ARG", "PTH", "TD", "FIX", "ERA", "PD", "PGH", "PL", "TRY", "FLY", "NPY", "AIR", "PERF", "RUF"]
+
+ignore = ["I001", "T201", "D210", "D203", "D400", "D415", "D103", "D212", "D213", "D101", "TRY003", "TRY301", "EM101", "PLR2004", "ERA001", "D100", "F401", "PGH003", "PD901", "ANN101", "D107", "INP001", "D401", "D403", "D102", "D106", "FIX002", "TD003", "FBT001", "FBT002", "TRY300", "BLE001", "FBT003", "D201", "UP017", "D105", "D104", "B008", "S324", "Q003", "ANN102"]
+
+fixable = []
+
+unfixable = []
+
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    ".idea",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+per-file-ignores = { }
+
+line-length = 120
+
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+target-version = "py311"
